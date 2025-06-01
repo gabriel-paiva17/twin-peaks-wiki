@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css\style.css">
 </head>
 
-<body class="text-white bg-black-lodge">
+<body class="text-white bg-black-lodge bg-black">
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-black border-bottom border-secondary shadow-red">
@@ -58,7 +58,8 @@
                         <li class="nav-item">
                             <div class="form-check form-switch mt-2 ms-2">
                                 <input class="form-check-input" type="checkbox" role="switch" id="modo-claro">
-                                <label class="form-check-label" for="modo-claro">Modo Claro</label>
+                                <label class="form-check-label" for="modo-claro">Modo Claro (somente em versões
+                                    futuras)</label>
                             </div>
 
                         </li>
@@ -73,7 +74,7 @@
         <article id="home" class="container-fluid mt-3">
             <div class="row p-3 mx-2 rounded-4 bg-black shadow-red bg-opacity-50 text-white">
                 <div class="col-12 mt-2">
-                    <h2 class="pb-4">Bem-vindos a Twin Peaks</h2>
+                    <h2 class="pb-4">Bem-vindos a Twin Peaks Wiki</h2>
                     <p>
                         Amigos, curiosos e corajosos exploradores do desconhecido... sejam bem-vindos a este refúgio
                         digital dedicado a uma das obras mais intrigantes da história da televisão: <strong>Twin
@@ -221,7 +222,7 @@
 
         <h2 id="curiosidades" class="ps-3 pt-3">Curiosidades</h2>
 
-        <div class="accordion p-3 mx-2 shadow-red" id="curiosidadesAccordion">
+        <div class="accordion p-3 mx-2 shadow-red rounded-4" id="curiosidadesAccordion">
 
             <!-- Item 1 -->
             <div class="accordion-item custom-accordion">
@@ -244,7 +245,7 @@
             </div>
 
             <!-- Item 2 -->
-            <div class="accordion-item custom-accordion">
+            <div class="accordion-item custom-accordion rounded">
                 <h3 class="accordion-header" id="curiosidade2">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
@@ -354,14 +355,80 @@
 
         </div>
 
+        <section id="trilha-sonora" class="container-fluid mt-3">
+            <div class="row p-3 mx-2 rounded-4 bg-black bg-opacity-50 shadow-red">
+                <div class="col-12">
+                    <h2 class="pb-4">Trilha Sonora</h2>
 
+                    <!-- Nav Tabs -->
+                    <ul class="nav nav-tabs flex-wrap justify-content-center mb-3" id="trilhaTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="tab-classic" data-bs-toggle="tab"
+                                data-bs-target="#pane-classic" type="button" role="tab" aria-controls="pane-classic"
+                                aria-selected="true">
+                                Temporadas 1 e 2
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tab-fwwm" data-bs-toggle="tab" data-bs-target="#pane-fwwm"
+                                type="button" role="tab" aria-controls="pane-fwwm" aria-selected="false">
+                                Fire Walk With Me
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tab-return" data-bs-toggle="tab" data-bs-target="#pane-return"
+                                type="button" role="tab" aria-controls="pane-return" aria-selected="false">
+                                The Return (2017)
+                            </button>
+                        </li>
+                    </ul>
 
+                    <!-- Tab Content -->
+                    <div class="tab-content" id="trilhaTabsContent">
 
+                        <!-- Temporadas 1 e 2 -->
+                        <div class="tab-pane fade show active" id="pane-classic" role="tabpanel"
+                            aria-labelledby="tab-classic">
+                            <div class="ratio ratio-16x9 mb-3">
+                                <iframe class="w-100 h-100 rounded-3" src="https://www.youtube.com/embed/nVM9GzUvEeA"
+                                    title="Twin Peaks Season 1 & 2 Soundtrack" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
 
+                        <!-- Fire Walk With Me -->
+                        <div class="tab-pane fade" id="pane-fwwm" role="tabpanel" aria-labelledby="tab-fwwm">
+                            <div class="ratio ratio-16x9 mb-3">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=px4UEzV3Fp0ksTdO&amp;list=PLDmdF1ma6cZp8Y0DIY_f4-H4YR5WEKjz0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
 
+                        <!-- The Return -->
+                        <div class="tab-pane fade" id="pane-return" role="tabpanel" aria-labelledby="tab-return">
+                            <div class="ratio ratio-16x9 mb-3">
+                                <iframe class="w-100 h-100 rounded-3" src="https://www.youtube.com/embed/videoseries?list=PLT6aoI6Aki8xeOrcJ9Avho3ZGjC4GghY2"
+                                    title="Twin Peaks The Return Soundtrack" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h2 id="galeria" class="ps-3 pt-3">Galeria: em versões futuras</h2>
+
+        <footer class="bg-black bg-opacity-50 text-center shadow-red">
+            &copy; Criado por Gabriel Paiva - 2025 | <a class="text-white"
+                href="https://www.canva.com/design/DAGovKfO1z4/hofHcIETN1WbHJ69By4vwg/edit?utm_content=DAGovKfO1z4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Link
+                para Wireframe/Mockup</a>
+        </footer>
 
 
     </main>
+    
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"

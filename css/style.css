@@ -28,9 +28,24 @@ body {
 
 }
 
+input[type="checkbox"] {
+    border: 2px solid red;
+    box-shadow: none;
+}
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:focus {
+    background-color: red;
+    border-color: red;
+    box-shadow: none;
+    outline: none;
+}
+
 section,
 article,
-#personagens {
+#personagens,
+#trilha-sonora,
+#galeria {
     scroll-margin-top: calc(10vh + 2rem);
 }
 
@@ -58,3 +73,6 @@ article,
     box-shadow: 0 0 32px rgba(255, 255, 255, 0.45);
   }
   
+  .nav-link:not(.active) {
+    color: white;
+}
