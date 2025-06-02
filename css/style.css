@@ -6,6 +6,9 @@
 
 body {
     font-family: 'TwinPeaksFont', sans-serif;
+}
+
+.body-padding-for-navbar {
     padding-top: calc(10vh + 1rem);
 }
 
