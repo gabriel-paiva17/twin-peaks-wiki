@@ -87,3 +87,10 @@ article,
     object-fit: cover;
     object-position: center;
 }
+
+/* A partir daqui as classes da pagina de login */
+
+::placeholder {
+  color: #ccc !important;
+  opacity: 1;
+}
